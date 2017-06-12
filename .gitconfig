@@ -140,6 +140,11 @@
 	# Enable an experimental heuristic that shifts the hunk boundary in an
 	# attempt to make the resulting patch easier to read.
 	indentHeuristic = true
+	tool = default-difftool
+
+[difftool "default-difftool"]
+
+	cmd = code --wait --diff $LOCAL $REMOTE
 
 [diff "bin"]
 
@@ -186,3 +191,8 @@
 [url "git://gist.github.com/"]
 
 	insteadOf = "gist:"
+
+[credential]
+
+	helper = osxkeychain
+

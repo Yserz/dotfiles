@@ -8,6 +8,15 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+brew tap caskroom/cask
+brew cask install google-chrome
+brew cask install firefox
+brew cask install java
+brew cask install the-unarchiver
+brew cask install virtualbox
+brew cask install textmate
+brew cask install visual-studio-code
+
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
